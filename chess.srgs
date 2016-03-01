@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar root="top" xml:lang="en-US"  tag-format="semantics/1.0">
+    <rule id="top" scope="public">
+        <item repeat="0-1"><ruleref uri="#letterF" />
+            <tag> out.letterF=rules.latest(); </tag>
+        </item>
+        <item repeat="0-1"><ruleref uri="#numberF" />
+            <tag> out.numberF=rules.latest(); </tag>
+        </item>
+        <item repeat="0-1"><ruleref uri="#letterS" />
+            <tag> out.letterS=rules.latest(); </tag>
+        </item>
+        <item repeat="0-1"><ruleref uri="#numberS" />
+            <tag> out.numberS=rules.latest(); </tag>
+        </item>
+    </rule>
+
+    <rule id="letterF" scope="public">
+        <one-of>
+            <item>alfa</item>
+            <item>bravo</item>
+            <item>charlie</item>
+            <item>delta</item>
+            <item>echo</item>
+            <item>foxtrot</item>
+            <item>golf</item>
+            <item>hotel</item>
+        </one-of>
+    </rule>
+ 
+    <rule id="numberF" scope="public">
+        <one-of>
+            <item>one</item>
+            <item>two</item>
+            <item>three</item>
+            <item>four</item>
+            <item>five</item>
+            <item>six</item>
+            <item>seven</item>
+            <item>eight</item>
+        </one-of>
+    </rule>
+    
+    
+    <rule id="letterS" scope="public">
+        <one-of>
+            <item>alfa</item>
+            <item>bravo</item>
+            <item>charlie</item>
+            <item>delta</item>
+            <item>echo</item>
+            <item>foxtrot</item>
+            <item>golf</item>
+            <item>hotel</item>
+        </one-of>
+    </rule>
+    
+    <rule id="numberS" scope="public">
+        <one-of>
+            <item>one</item>
+            <item>two</item>
+            <item>three</item>
+            <item>four</item>
+            <item>five</item>
+            <item>six</item>
+            <item>seven</item>
+            <item>eight</item>
+        </one-of>
+    </rule>
+
+
+</grammar>
